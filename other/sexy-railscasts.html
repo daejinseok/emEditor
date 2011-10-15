@@ -1,0 +1,108 @@
+
+<html>
+<P style="background-color:#222222">
+<font face=consolas >
+" Name:     sexy-railscast vim colorscheme<br>
+" Modifier: Oguz Bilgic <fisyonet@gmail.com> <br>
+" Url:      https://github.com/oguzbilgic/sexy-railscasts-theme  <br>
+" License:  public domain<br>
+"<br>
+" A GUI Only port of the RailsCasts TextMate theme [1] to Vim.<br>
+" Some parts of this theme were borrowed from the well-documented Lucius theme [2].<br>
+" Initial file was written by Josh O'Rourke [3] then improved by Oguz Bilgic<br>
+" <br>
+" [1] http://railscasts.com/about <br>
+" [2] http://www.vim.org/scripts/script.php?script_id=2536<br>
+" [3] https://github.com/jpo/vim-railscasts-theme<br>
+<br>
+" -----------------------------------------------------------------------------------<br>
+" Settings<br>
+" -----------------------------------------------------------------------------------<br>
+set background=dark<br>
+hi clear<br>
+if exists("syntax_on")<br>
+  syntax reset<br>
+endif<br>
+let g:colors_name = "sexy-railscasts"<br>
+<br>
+" -----------------------------------------------------------------------------------<br>
+" Basics<br>
+" -----------------------------------------------------------------------------------<br>
+hi Normal                    guifg=#E6E1DC guibg=#222222<br>
+hi Cursor                    guibg=#FFFFFF<br>
+hi CursorLine                guibg=#333435<br>
+hi LineNr                    guifg=#383838 guibg=#141414<br>
+hi NonText                   guifg=#383838 guibg=#252525 <br>
+hi Search                    guibg=#5A647E<br>
+hi VertSplit                 guifg=#383838 guibg=#383838<br>
+hi Visual                    guibg=#5A647E<br>
+hi Title                     guifg=#FFFFFF<br>
+<br>
+" -----------------------------------------------------------------------------------<br>
+" Folds<br>
+" -----------------------------------------------------------------------------------<br>
+hi Folded                    guifg=#F6F3E8 guibg=#444444 gui=NONE<br>
+<br>
+" -----------------------------------------------------------------------------------<br>
+" Misc<br>
+" -----------------------------------------------------------------------------------<br>
+hi Directory                 guifg=#A5C261 gui=NONE<br>
+<br>
+" -----------------------------------------------------------------------------------<br>
+" Popup Menu<br>
+" -----------------------------------------------------------------------------------<br>
+hi Pmenu                     guifg=#F6F3E8 guibg=#444444 gui=NONE<br>
+hi PmenuSel                  guifg=#000000 guibg=#A5C261 gui=NONE<br>
+hi PMenuSbar                 guibg=#5A647E gui=NONE<br>
+hi PMenuThumb                guibg=#AAAAAA gui=NONE<br>
+<br>
+" -----------------------------------------------------------------------------------<br>
+" Syntax<br>
+" -----------------------------------------------------------------------------------<br>
+<font color=#BC9458>hi Comment                   guifg=#BC9458 gui=italic<br>
+<font color=#BC9458>hi Todo                      guifg=#BC9458 guibg=NONE    gui=italic<br>
+<font color=#6D9CBE>hi Constant                  guifg=#6D9CBE<br>
+<font color=#CC7833>hi Define                    guifg=#CC7833<br>
+<font color=#519F50>hi Delimiter                 guifg=#519F50<br>
+<font color=#FFFFFF style="background-color:#990000">hi Error                     guifg=#FFFFFF guibg=#990000</font><br>
+<font color=#FFC66D>hi Function                  guifg=#FFC66D gui=NONE</font><br>
+<font color=#D0D0FF>hi Identifier                guifg=#D0D0FF gui=NONE<br>
+<font color=#CC7833>
+hi Include                   guifg=#CC7833 gui=NONE<br>
+hi Keyword                   guifg=#CC7833<br>
+hi Macro                     guifg=#CC7833 gui=NONE<br>
+hi Number                    guifg=#A5C261<br>
+hi PreCondit                 guifg=#CC7833 gui=NONE<br>
+hi PreProc                   guifg=#CC7833 gui=NONE<br>
+hi Statement                 guifg=#CC7833 gui=NONE<br></font>
+<font color=#A5C261>hi String                    guifg=#A5C261<br></font>
+<font color=#DA4939>hi Type                      guifg=#DA4939 gui=NONE</font><br>
+<br>
+" -----------------------------------------------------------------------------------<br>
+" Ruby<br>
+" -----------------------------------------------------------------------------------<br>
+hi erubyDelimiter            guifg=#DA4939 <br>
+<br>
+" -----------------------------------------------------------------------------------<br>
+" Git<br>
+" -----------------------------------------------------------------------------------<br>
+hi DiffAdd                   guifg=#E6E1DC guibg=#144212<br>
+hi DiffDelete                guifg=#E6E1DC guibg=#660000<br>
+<br>
+" -----------------------------------------------------------------------------------<br>
+" Xml<br>
+" -----------------------------------------------------------------------------------<br>
+hi xmlTag                    guifg=#E8BF6A<br>
+hi xmlTagName                guifg=#E8BF6A<br>
+hi xmlEndTag                 guifg=#E8BF6A<br>
+<br>
+" -----------------------------------------------------------------------------------<br>
+" Html<br>
+" -----------------------------------------------------------------------------------<br>
+hi htmlArg                   guifg=#FFC66D guibg=#222222<br>
+hi link htmlTag              xmlTag<br>
+hi link htmlTagName          xmlTagName<br>
+hi link htmlEndTag           xmlEndTag<br>
+</font>
+</P>
+</HTML>
